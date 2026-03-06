@@ -1,0 +1,375 @@
+/* <--- CSS CODE ---> */
+
+* {
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+    font-family: arial, sans-serif;
+    color: #e8e8e8;
+    flex-wrap: wrap;
+}
+
+/* <--- NAV BAR ---> */
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* <--- Nav LEFT (NAV 1) ---> */
+
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav1 a:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.nav1 a {
+    text-decoration: none;
+}
+
+
+/* <--- NAV RIGHT (NAV 2) ---> */
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav2 a {
+    text-decoration: none;
+}
+
+.nav2 a:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* <--- ICON GRID ---> */
+
+.apps-icon {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 5px);
+    gap: 3px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.apps-icon:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.apps-icon span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #e8eaed;
+    border-radius: 1px;
+}
+
+/* <--- SIGN IN BUTTON ---> */
+
+[type="submit"] {
+    color: #1f1f1f;
+    background-color: #99c3f9;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: #99c3f9;
+    border-style: solid;
+}
+
+a {
+    color: white;
+}
+
+/* <--- MAIN SECTION ---> */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* <--- GOOGLE LOGO IMG ---> */
+
+img {
+    margin-top: 100px;
+    width: 500px;
+}
+
+/* <--- SEARCH BOX PART ---> */
+
+.search_box {
+    width: 100%;
+    max-width: 584px;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+/* <--- SEARCH BAR ---> */
+
+.search_bar {
+    width: 100%;
+    background: #303134;
+    border: 1px solid #5f6368;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 12px;
+    transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.search_bar:hover {
+    background: #3c4043;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.search_bar:hover {
+    .search_plus {
+        background: #3c4043;
+    }
+
+    .search_icons {
+        background: #3c4043;
+    }
+}
+
+.search_bar:focus-within {
+    background: #303134;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    border-color: #303134;
+}
+
+/* <--- SEARCH PLUS ICON ---> */
+
+.search_plus {
+    color: #9aa0a6;
+    background-color: #303134;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+.search_input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #e8eaed;
+    font-size: 16px;
+    caret-color: #8ab4f8;
+}
+
+.search_input::placeholder {
+    color: transparent;
+}
+
+/* <--- SEARCH ICONS (MIC, PHOTO) ---> */
+
+.search_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: #303134;
+
+}
+
+
+
+/* ICON BUTTON (MIC, PHOTO) */
+.icon_btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9aa0a6;
+    background-color: #303134;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 50%;
+    transition: color 0.15s, background 0.15s;
+}
+
+.icon_btn:hover {
+    color: #e8eaed;
+    background: rgba(255, 255, 255, 0.08);
+
+}
+
+.icon_btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    background-color: #303134;
+
+}
+
+/* <--- AI MODE BUTTON ---> */
+
+.ai_mode_btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #1a3a5c;
+    border: 1px solid #4a7ab5;
+    border-radius: 9999px;
+    color: #8ab4f8;
+    background-color: #303134;
+    font-size: 13px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.ai_mode_btn:hover {
+    background: #1e4470;
+}
+
+.ai_mode_btn svg {
+    background-color: #303134;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+
+.search_buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.btn_search {
+    background: #303134;
+    border: 1px solid #303134;
+    color: #e8eaed;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.btn_search:hover {
+    background: #3c4043;
+    border-color: #5f6368;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* <--- SEARCH TYPE (GOOGLE SEARCH, FEELING LUCKY) ---> */
+
+.search_type {
+    color: #e8e8e8;
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.google_search p {
+    padding: 10px;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 8px;
+}
+
+.feeling_lucky p {
+    padding: 10px;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 8px;
+}
+
+div+p {
+    color: #bfbfbf;
+}
+
+/* <--- LANGUAGE (HINDI,ENGLISH ETC.) ---> */
+
+.language {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.language a {
+    margin-top: 15px;
+    color: #99c3f9;
+}
+
+/* <--- FOOTER SECTION ---> */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+/* <--- COUNTRY NAME ---> */
+
+.country {
+    position: fixed;
+    bottom: 70px;
+    left: 23px;
+    width: 100%;
+}
+
+/* <--- FOOTER ITEMS ---> */
+
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* <--- FOOTER ITEMS1 (ADVERTISING,BUSINESS,HOW SEARCH WORKS>) ---> */
+
+.footer_items1 {
+    margin: 10px;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.footer_items1 a {
+    text-decoration: none;
+}
+
+.footer_items1 a:hover {
+    text-decoration: underline;
+}
+
+/* <--- FOOTER ITEMS2 (PRIVACY,TEMRS, SETTINGS) ---> */
+
+.footer_items2 {
+    margin: 10px;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.footer_items2 a {
+    text-decoration: none;
+}
+
+.footer_items2 a:hover {
+    text-decoration: underline;
+}
+
+
+
